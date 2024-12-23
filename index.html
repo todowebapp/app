@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="onLoad()">
+    <div id="header">
+        <h1 id="header-title">To Do</h1>
+    </div>
+    <div id="sideBar">
+        <h2 id="sideBar-title">Listen</h2>
+        <button id="sideBar-newListBtn">Neue Liste</button>
+        <ul id="sideBar-listRefs">
+            <!-- to do list refs here -->
+        </ul>
+    </div>
+    <div id="canvas">
+        <div id="toDoListWin" class="">
+            <h2 id="toDoListWin-title">Meine Liste</h2>
+            <div id="toDoListWin-emptyEntry" class="toDoListWin-entry emptyEntry">
+                <input class="toDoListWin-entry-text" type="text">
+            </div>
+        </div>
+    </div>
+    <div id="listCreationWin" class="hidden">
+        <h2 id="listCreationWin-title">Neue Liste hinzufügen</h2>
+        <input id="listCreationWin-nameTxtField" type="text" placeholder="Name">
+        <div id="listCreationWin-buttons">
+            <button id="listCreationWin-cancelBtn">Abbrechen</button>
+            <button id="listCreationWin-addBtn">Hinzufügen</button>
+        </div>
+    </div>
+    <template id="toDoListWin-entry-template">
+        <div class="toDoListWin-entry">
+            <input class="toDoListWin-entry-checkbox" type="checkbox">
+            <input class="toDoListWin-entry-text" type="text">
+        </div>
+    </template>
+    <script src="script.js"></script>
+</body>
+</html>
