@@ -17,6 +17,7 @@ body {
     background-color: white;
     width: 30vw;
     height: 80vh;
+    max-width: 250px;
     position: fixed;
     top: 10vh;
     left: 0px;
